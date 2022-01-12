@@ -1,6 +1,7 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffff;
+    font-size: 13px;
 }
 
 *{
@@ -16,23 +17,16 @@ body{
 }
 
 header{
+    min-height: 75px;
     background-color: #000000;
     display: flex;
     justify-content: flex-end;
-    border: 1px dashed yellowgreen;
-    padding: 5px;
-}
-
-main{
-    background-color: #000000;
-    flex-grow: 1;
-    display: flex;
+    padding: 5px 5px 40px 0;
+    column-gap: 10px;
 }
 
 .view{
-    font-size: 13px;
     display: flex;
-    column-gap: 10px;
 }
 
 .video-layout, .screen-mode{
@@ -53,7 +47,32 @@ main{
     width: 25px;
 }
 
-/* gallery */
+main{
+    background-color: #000000;
+    flex-grow: 1;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 5px;
+}
+
+.participant{
+    width: 185px;
+    height: 120px;
+    background-image: url('img/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(74, 74, 74, 0.5);
+    padding: 3px;
+}
 
 
 
@@ -66,3 +85,16 @@ footer{
 
 
 
+/* DEBUG */
+
+header{
+    border: 2px dashed yellowgreen;
+}
+
+main{
+    border: 2px dashed red;
+}
+
+.participant{
+    border: 1px dashed fuchsia;
+}
