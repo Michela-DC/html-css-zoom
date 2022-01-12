@@ -1,0 +1,28 @@
+html{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: #000000;
+    flex-grow: 1;
+}
+
+footer{
+    min-height: 80px;
+    background-color: #222222;
+}
+
+
