@@ -83,20 +83,15 @@ footer{
     align-items: center;
 }
 
-.audio-video, .actions{
+.audio-video, .actions ul{
+    list-style: none;
     display: flex;
     text-align: center;
     column-gap: 15px;
 }
 
-.end-meeting{
-    width: 100px;
-    height: 100%;
-    color: red;
-    background-color: #4A4A4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.audio-video i, .actions i{
+    display: block;
 }
 
 .icons{
@@ -117,9 +112,19 @@ footer{
     color: #4AC803;
 }
 
-.audio-video div:hover, .actions div:hover{
+.audio-video div:hover, .actions li:hover{
     color: #b3b3b3;
-}  
+} 
+
+.end-meeting{
+    width: 100px;
+    height: 100%;
+    color: red;
+    background-color: #4A4A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .end-meeting:hover{
     font-weight: bold;
